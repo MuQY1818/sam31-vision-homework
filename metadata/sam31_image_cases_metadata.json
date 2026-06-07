@@ -1,0 +1,81 @@
+{
+  "project": "facebookresearch/sam3",
+  "modelscope_model": "facebook/sam3.1",
+  "checkpoint": "checkpoints/sam3.1/sam3.1_multiplex.pt",
+  "load_seconds": 6.12,
+  "confidence_threshold": 0.35,
+  "max_instances": 8,
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "cuda_runtime": "12.4",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "cases": [
+    {
+      "image": "data/static_images/cumt_nanhu_library.jpg",
+      "prompt": "building",
+      "output_prefix": "sam31_cumt_building",
+      "note": "CUMT Nanhu campus library night scene.",
+      "objects": 11,
+      "inference_seconds": 0.28,
+      "top_scores": [
+        0.406,
+        0.365,
+        0.523,
+        0.691,
+        0.59,
+        0.516,
+        0.49,
+        0.859
+      ],
+      "rendered_image": "results/image/sam31_cumt_building.png"
+    },
+    {
+      "image": "data/static_images/cumt_nanhu_library.jpg",
+      "prompt": "tree",
+      "output_prefix": "sam31_cumt_tree",
+      "note": "CUMT Nanhu campus vegetation and foreground objects.",
+      "objects": 0,
+      "inference_seconds": 0.09,
+      "top_scores": [],
+      "rendered_image": "results/image/sam31_cumt_tree.png"
+    },
+    {
+      "image": "data/static_images/groceries.jpg",
+      "prompt": "bottle",
+      "output_prefix": "sam31_groceries_bottle",
+      "note": "Complex grocery shelf scene.",
+      "objects": 0,
+      "inference_seconds": 0.09,
+      "top_scores": [],
+      "rendered_image": "results/image/sam31_groceries_bottle.png"
+    },
+    {
+      "image": "data/static_images/truck.jpg",
+      "prompt": "truck",
+      "output_prefix": "sam31_truck",
+      "note": "Large vehicle object in a street scene.",
+      "objects": 1,
+      "inference_seconds": 0.09,
+      "top_scores": [
+        0.875
+      ],
+      "rendered_image": "results/image/sam31_truck.png"
+    },
+    {
+      "image": "data/static_images/truck.jpg",
+      "prompt": "wheel",
+      "output_prefix": "sam31_truck_wheel",
+      "note": "Part-level prompt on the truck image.",
+      "objects": 4,
+      "inference_seconds": 0.09,
+      "top_scores": [
+        0.949,
+        0.945,
+        0.883,
+        0.906
+      ],
+      "rendered_image": "results/image/sam31_truck_wheel.png"
+    }
+  ],
+  "summary_image": "results/image/sam31_image_cases_summary.png"
+}

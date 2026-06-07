@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Large local assets that should not be committed
+checkpoints/
+sam3/
+data/
+
+# LaTeX build cache
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.xdv
+
+# System files
+.DS_Store
