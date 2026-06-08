@@ -178,7 +178,7 @@
 
 \subsection{项目选择}
 
-项目选用 Meta 的 SAM 3: Segment Anything with Concepts，它是 SAM 系列的第三代统一分割基础模型，也是本次课程作业中的图像处理深度学习开源项目。官方仓库位于 GitHub\cite{sam3_github}，项目页说明了模型定位并提供了示例演示\cite{sam3_project}。本次实验的脚本、报告和结果截图整理在个人公开仓库中\cite{homework_repo}，官方源码和模型权重不随作业仓库上传。SAM 3 支持文本、点、框、mask 等多种提示方式。相比 SAM 2，SAM 3 的关键变化是增加了开放词汇概念分割能力：用户输入简短文本短语后，模型可以自动检测并分割相关实例。
+项目选用 Meta 的 SAM 3: Segment Anything with Concepts，它是 SAM 系列的第三代统一分割基础模型，也是本次课程作业中的图像处理深度学习开源项目。官方仓库位于 GitHub\cite{sam3_github}，项目页说明了模型定位并提供了示例演示\cite{sam3_project}。本次实验的脚本、报告和结果截图整理在个人公开仓库中\cite{homework_repo}，官方源码和模型权重不随作业仓库上传。实验材料获取地址为：\url{https://github.com/MuQY1818/sam31-vision-homework}。SAM 3 支持文本、点、框、mask 等多种提示方式。相比 SAM 2，SAM 3 的关键变化是增加了开放词汇概念分割能力：用户输入简短文本短语后，模型可以自动检测并分割相关实例。
 
 SAM 3.1 是 2026 年 3 月发布的更新版本，重点引入 Object Multiplex，用共享记忆方式联合处理多个视频目标，降低多目标跟踪中的重复计算\cite{sam3_release}。实验中直接加载 \texttt{sam3.1\_multiplex.pt} checkpoint，用文本提示词在足球视频帧序列中完成分割与跟踪。
 
