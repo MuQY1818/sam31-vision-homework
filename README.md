@@ -8,6 +8,7 @@
 - `report/source/`：LaTeX 源文件、参考文献及配图。
 - `scripts/run_sam31_player.py`：足球短视频三组 prompt 分割实验脚本。
 - `scripts/run_sam31_image_cases.py`：单帧图像补充分割实验脚本。
+- `scripts/build_sam31_report_figures.py`：根据已有结果截图生成报告中的组合展示图。
 - `results/video/`：`person`、`ball`、`player in red` 三组视频分割结果截图。
 - `results/image/`：校园夜景、车厢物品、街景货车等单帧图像分割结果。
 - `metadata/`：实验脚本自动记录的 JSON 元数据（耗时、GPU、帧数、目标数等）。
