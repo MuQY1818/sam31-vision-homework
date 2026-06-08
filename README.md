@@ -4,7 +4,7 @@
 
 ## 仓库结构
 
-- `report/SAM3_1_experiment_report.pdf`：课程实验报告终稿。
+- `report/基于SAM3.1的开放词汇视频目标分割实验.pdf`：课程实验报告终稿。
 - `report/source/`：LaTeX 源文件、参考文献及配图。
 - `scripts/run_sam31_player.py`：足球短视频三组 prompt 分割实验脚本。
 - `scripts/run_sam31_image_cases.py`：单帧图像补充分割实验脚本。
